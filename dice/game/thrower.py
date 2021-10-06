@@ -30,8 +30,10 @@ class Thrower:
         if self.num_throws > 0:
             return True
         elif 1 in self.dice:
+            self.dice.clear()
             return True
         elif 5 in self.dice:
+            self.dice.clear()
             return True
         else:
             return False
